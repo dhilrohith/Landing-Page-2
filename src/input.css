@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Arc Styles */
+.arc {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Full width to touch edges */
+    height: 150px; /* Height for the arc */
+    border-radius: 150px 150px 0 0; /* Top rounded, bottom straight */
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Dashed Arc */
+.arc.dashed {
+    border-style: dashed;
+    width: 90%; /* Slightly smaller width to align inside */
+    height: 120px;
+    border-radius: 120px 120px 0 0;
+}
+
+/* Third Arc */
+.arc.third {
+    width: 80%; /* Slightly smaller again */
+    height: 100px;
+    border-radius: 100px 100px 0 0;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.sCart{
+    width: 12px;
+    height: 12px;
+    /* margin-bottom:20px; */
+}
+
+.cards{
+    display:flex;
+    flex-direction:column;
+    font-family:"saira", sans-serif ;
+    gap:1.5rem;
+}
+
+.cards p{
+    font-size:14px;
+    font-weight:900px;
+}
